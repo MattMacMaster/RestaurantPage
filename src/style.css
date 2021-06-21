@@ -13,15 +13,28 @@ h1 {
     margin-top: 0%;
 
 }
+.desc {
+    font-size: medium;
+}
+.card-icon {
+    width: 25%;
+}
+.card-title {
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
 .map_img{
-    margin-top: 70px;
-    width:100%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width:85%;
 }
 .chef_img {
-    border-radius: 50%;
-    width: 75%;
-    padding-top: 5px;
-    padding-bottom: 50px;
+    border-radius: 80%;
+    width: 85%;
+    height: 90%;
+    opacity: 90%;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
 }
 .leftTab {
     color: white;
@@ -74,15 +87,40 @@ h1 {
     font-size:300%;
     text-align:center;
 }
+
+.card {
+    background-color: rgb(0, 0, 0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+}
+.card:hover {
+    background-color: rgba(48, 46, 46, 0.7);
+    animation: fadeIn 0.5s 1;
+
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+}
+
 .content {
-    margin-top: 500px;
-    max-width: 600px;
-    min-height: 550px;
-    min-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Courier New', cursive;
     font-size: 150%;
-    margin: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right:30%;
+    padding: 2%;
+    background-color: rgb(0, 0, 0,0.6);
+    border: 1px solid #222;
 }
 .header {
     background-color: rgb(0, 0, 0,0.7);
@@ -124,21 +162,12 @@ p {
 .Inlink:hover {
     color: grey;
 }
-.content {
-    text-align: center;
-    justify-content: center;
-    color: white;
-    font-family: 'monsterrat', cursive;
 
-    margin-top: 5%;
-    width: 30%;
-    height: 18em;
-    padding: 2%;
-    background-color: rgb(0, 0, 0,0.7);;
-}
-.chef_img {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 70%;
-
+@keyframes fadeIn {
+    from {
+        background-color: rgb(0, 0, 0,0.7);
+    }
+    to {
+        background-color: rgba(48, 46, 46, 0.7);
+    }
 }
